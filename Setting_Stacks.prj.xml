@@ -1,0 +1,1031 @@
+<!--
+
+  Setting Stacks - An Emulation of Setting Profiles for Tasker
+
+  Version 0.5
+
+  Copyright 2015 Blrfl Laboratories.  All rights reserved.
+
+  Setting Stacks is licensed under the Apache License, Version 2.0
+  (the "License") and may not be used except in compliance with the
+  License.
+
+  You may obtain a copy of the License at
+  http://www.apache.org/licenses/LICENSE-2.0.
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+  implied. See the License for the specific language governing
+  permissions and limitations under the License.
+
+  -->
+<TaskerData sr="" dvi="1" tv="4.6u3m">
+	<dmetric>1080.0,1920.0</dmetric>
+	<Profile sr="prof3" ve="2">
+		<cdate>1426217283823</cdate>
+		<edate>1427482310928</edate>
+		<id>3</id>
+		<mid0>83</mid0>
+		<nme>SS-Timed Sweep</nme>
+		<State sr="con0" ve="2">
+			<code>165</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_TimedTimes(#)</lhs>
+					<op>7</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</State>
+		<Time sr="con1">
+			<fh>-1</fh>
+			<fm>-1</fm>
+			<rep>2</rep>
+			<repval>2</repval>
+			<th>-1</th>
+			<tm>-1</tm>
+		</Time>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1425599850927</cdate>
+		<name>Setting Stacks</name>
+		<pids>3</pids>
+		<psort>Alpha</psort>
+		<scenes></scenes>
+		<tids>79,8,78,84,83,28,90,23,87,22</tids>
+		<tsort>Alpha</tsort>
+		<Img sr="icon" ve="2">
+			<nme>hd_device_access_storage</nme>
+		</Img>
+	</Project>
+	<Task sr="task22">
+		<cdate>1425600162230</cdate>
+		<edate>1427482205532</edate>
+		<id>22</id>
+		<nme>SS-Initialize</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SS_Cleanup</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SS_MaxPri</Str>
+			<Str sr="arg1" ve="3">9</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SS_Default</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SS_Apply All</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_storage</nme>
+		</Img>
+	</Task>
+	<Task sr="task23">
+		<cdate>1425600525358</cdate>
+		<edate>1427482191408</edate>
+		<id>23</id>
+		<nme>SS-Exit</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">At Home</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par2</Str>
+			<Str sr="arg1" ve="3">floor(%SS_MaxPri / 2)</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par2</Str>
+			<Str sr="arg1" ve="3">%SS_MaxPri</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>7</op>
+					<rhs>%SS_MaxPri</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">SS_StackP%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">N</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%item</Str>
+			<Str sr="arg1" ve="3">1:%%array(#)</Str>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>356</code>
+			<Str sr="arg0" ve="3">%%array</Str>
+			<Int sr="arg1">
+				<var>%item</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%%array(%item)</lhs>
+					<op>0</op>
+					<rhs>%par1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>369</code>
+			<Str sr="arg0" ve="3">%%array</Str>
+			<Int sr="arg1" val="11"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SS_Apply All</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_storage</nme>
+		</Img>
+	</Task>
+	<Task sr="task28">
+		<cdate>1425602110316</cdate>
+		<edate>1427482152355</edate>
+		<id>28</id>
+		<nme>SS-Enter</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Error running task "%par1"</Str>
+			<Int sr="arg1" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%err</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par2</Str>
+			<Str sr="arg1" ve="3">floor(%SS_MaxPri / 2)</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par2</Str>
+			<Str sr="arg1" ve="3">%SS_MaxPri</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>7</op>
+					<rhs>%SS_MaxPri</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">SS_StackP%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">N</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>355</code>
+			<Str sr="arg0" ve="3">%%array</Str>
+			<Int sr="arg1" val="9999"/>
+			<Str sr="arg2" ve="3">%par1</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>369</code>
+			<Str sr="arg0" ve="3">%%array</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SS_Apply All</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_storage</nme>
+		</Img>
+	</Task>
+	<Task sr="task78">
+		<cdate>1425600525358</cdate>
+		<edate>1427482261889</edate>
+		<id>78</id>
+		<nme>SS_Apply All</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">%SS_Default</Str>
+			<Int sr="arg1">
+				<var>%priority+1</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_Default</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%pri</Str>
+			<Str sr="arg1" ve="3">0:%SS_MaxPri</Str>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">SS_StackP%pri</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">N</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%item</Str>
+			<Str sr="arg1" ve="3">1:%%array(#)</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%%array(#)</lhs>
+					<op>7</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">%%array(%item)</Str>
+			<Int sr="arg1">
+				<var>%priority+1</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%task</Str>
+			<Str sr="arg1" ve="3">%SS_TimedTasks()</Str>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">%task</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_av_replay</nme>
+		</Img>
+	</Task>
+	<Task sr="task79">
+		<cdate>1425698891518</cdate>
+		<edate>1427482222892</edate>
+		<id>79</id>
+		<nme>SS-Show Active</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%list</Str>
+			<Str sr="arg1" ve="3">&lt;li&gt;%SS_Default (D)&lt;/li&gt;</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_Default</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%pri</Str>
+			<Str sr="arg1" ve="3">0:%SS_MaxPri</Str>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%list</Str>
+			<Str sr="arg1" ve="3">&lt;li&gt;%SS_TimedTasks(%num) (Until %time)&lt;/li&gt;</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%list</Str>
+			<Str sr="arg1" ve="3">&lt;li≥None&lt;/li&gt;</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%list</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>941</code>
+			<Str sr="arg0" ve="3">Active Settings:&lt;ul&gt;%list&lt;ul&gt;</Str>
+			<Str sr="arg1" ve="3">HTML Popup</Str>
+			<Int sr="arg2" val="10"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">SS_StackP%pri</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">N</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%item</Str>
+			<Str sr="arg1" ve="3">1:%%array(#)</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%%array(#)</lhs>
+					<op>7</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%list</Str>
+			<Str sr="arg1" ve="3">&lt;li&gt;%%array(%item)  (%pri)&lt;/li&gt;</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%num</Str>
+			<Str sr="arg1" ve="3">1:%SS_TimedTasks(#)</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_TimedTasks(#)</lhs>
+					<op>7</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>596</code>
+			<Str sr="arg0" ve="3">%SS_TimedTimes(%num)</Str>
+			<Int sr="arg1" val="4"/>
+			<Str sr="arg2" ve="3">%time</Str>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_storage</nme>
+		</Img>
+	</Task>
+	<Task sr="task8">
+		<cdate>1425600162230</cdate>
+		<edate>1427482276176</edate>
+		<id>8</id>
+		<nme>SS_Cleanup</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%pri</Str>
+			<Str sr="arg1" ve="3">0:%SS_MaxPri</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">SS_StackP%pri</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%array</Str>
+			<Str sr="arg1" ve="3">N</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>357</code>
+			<Str sr="arg0" ve="3">%%array</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>357</code>
+			<Str sr="arg0" ve="3">%SS_TimedTimes</Str>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>357</code>
+			<Str sr="arg0" ve="3">%SS_TimedTasks</Str>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%SS_Default</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%SS_MaxPri</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task83">
+		<cdate>1426217294221</cdate>
+		<edate>1427482310928</edate>
+		<id>83</id>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%pos</Str>
+			<Str sr="arg1" ve="3">%SS_TimedTimes(#):1:-1</Str>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_TimedTimes(%pos)</lhs>
+					<op>6</op>
+					<rhs>%TIMES</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Time expired.  Deactivating %SS_TimedTasks(%pos).</Str>
+			<Int sr="arg1" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_Verbose</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>356</code>
+			<Str sr="arg0" ve="3">%SS_TimedTimes</Str>
+			<Int sr="arg1">
+				<var>%pos</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>356</code>
+			<Str sr="arg0" ve="3">%SS_TimedTasks</Str>
+			<Int sr="arg1">
+				<var>%pos</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SS_Apply All</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%count</lhs>
+					<op>7</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task84">
+		<cdate>1426218760152</cdate>
+		<edate>1427482237688</edate>
+		<id>84</id>
+		<nme>SS-Timed Enter</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>300</code>
+			<label>Usage:  1-Profile,  2-Seconds</label>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%pos</Str>
+			<Str sr="arg1" ve="3">%SS_TimedTimes(#) + 1</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%endtime</Str>
+			<Str sr="arg1" ve="3">%TIMES + %par2</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>355</code>
+			<Str sr="arg0" ve="3">%SS_TimedTimes</Str>
+			<Int sr="arg1">
+				<var>%pos</var>
+			</Int>
+			<Str sr="arg2" ve="3">%endtime</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>355</code>
+			<Str sr="arg0" ve="3">%SS_TimedTasks</Str>
+			<Int sr="arg1">
+				<var>%pos</var>
+			</Int>
+			<Str sr="arg2" ve="3">%par1</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>596</code>
+			<Str sr="arg0" ve="3">%endtime</Str>
+			<Int sr="arg1" val="4"/>
+			<Str sr="arg2" ve="3">%enddatetime</Str>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Activating %par1 until %enddatetime</Str>
+			<Int sr="arg1" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_Verbose</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Setting Stacks Error</Str>
+			<Str sr="arg1" ve="3">Not enough arguments to Manual</Str>
+			<Img sr="arg2" ve="2">
+				<nme>hd_alerts_and_states_error</nme>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>126</code>
+			<Str sr="arg0" ve="3">ERROR</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SS_Get Interval</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%par2</Str>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>39</code>
+			<label>Remove existing same-name profile</label>
+			<Str sr="arg0" ve="3">%num</Str>
+			<Str sr="arg1" ve="3">%SS_TimedTasks(#):0:-1</Str>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_TimedTasks(%num)</lhs>
+					<op>0</op>
+					<rhs>%par1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>356</code>
+			<Str sr="arg0" ve="3">%SS_TimedTimes</Str>
+			<Int sr="arg1">
+				<var>%num</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>356</code>
+			<Str sr="arg0" ve="3">%SS_TimedTasks</Str>
+			<Int sr="arg1">
+				<var>%num</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_storage</nme>
+		</Img>
+	</Task>
+	<Task sr="task87">
+		<cdate>1426298371400</cdate>
+		<edate>1427482286866</edate>
+		<id>87</id>
+		<nme>SS_Get Interval</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%times</Str>
+			<Str sr="arg1" ve="3">0.25,0.5,1,1.5,2,4,8,12, 0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%times</Str>
+			<Str sr="arg1" ve="3">,</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>551</code>
+			<Str sr="arg0" ve="3">Duration</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">IconAndTextMenu</Str>
+			<Int sr="arg3" val="600"/>
+			<Int sr="arg4" val="1"/>
+			<ListElementItem sr="item0">
+				<label>15 Min</label>
+				<Img sr="icon" ve="2">
+					<nme>hd_device_access_data_usage</nme>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item1">
+				<label>30 Min</label>
+				<Img sr="icon" ve="2">
+					<nme>hd_device_access_data_usage</nme>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item2">
+				<label>1 Hour</label>
+				<Img sr="icon" ve="2">
+					<nme>hd_device_access_data_usage</nme>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item3">
+				<label>1.5 Hours</label>
+				<Img sr="icon" ve="2">
+					<nme>hd_device_access_data_usage</nme>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item4">
+				<label>2 Hours</label>
+				<sel>true</sel>
+				<Img sr="icon" ve="2">
+					<nme>hd_device_access_data_usage</nme>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item5">
+				<label>4 Hours</label>
+				<Img sr="icon" ve="2">
+					<nme>hd_device_access_data_usage</nme>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item6">
+				<label>8 Hours</label>
+				<Img sr="icon" ve="2">
+					<nme>hd_device_access_data_usage</nme>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item7">
+				<label>12 Hours</label>
+				<Img sr="icon" ve="2">
+					<nme>hd_device_access_data_usage</nme>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item8">
+				<label>No Time</label>
+				<Img sr="icon" ve="2">
+					<nme>hd_device_access_data_usage</nme>
+				</Img>
+			</ListElementItem>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%seconds</Str>
+			<Str sr="arg1" ve="3">%times(%tap_index) * 3600</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>126</code>
+			<Str sr="arg0" ve="3">%seconds</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task90">
+		<cdate>1426476605514</cdate>
+		<edate>1427482250056</edate>
+		<id>90</id>
+		<nme>SS-Timed Exit</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%num</Str>
+			<Str sr="arg1" ve="3">%SS_TimedTasks(#):0:-1</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_TimedTasks(%num)</lhs>
+					<op>0</op>
+					<rhs>%par1</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%removed</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>356</code>
+			<Str sr="arg0" ve="3">%SS_TimedTasks</Str>
+			<Int sr="arg1">
+				<var>%num</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>356</code>
+			<Str sr="arg0" ve="3">%SS_TimedTimes</Str>
+			<Int sr="arg1">
+				<var>%num</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%removed</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Deactivated %par1.</Str>
+			<Int sr="arg1" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SS_Verbose</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SS_Apply All</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%removed</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%par1 was not active.</Str>
+			<Int sr="arg1" val="0"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%removed</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%SS_Verbose</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_storage</nme>
+		</Img>
+	</Task>
+</TaskerData>
