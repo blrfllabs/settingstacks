@@ -9,5 +9,5 @@ See the [Setting Stacks Wiki](https://github.com/blrfllabs/settingstacks/wiki) f
 
 # Quick Links
 
+* [User Manual](https://github.com/blrfllabs/settingstacks/wiki/Manual).  Please read this first.
 * [Project File](https://raw.githubusercontent.com/blrfllabs/settingstacks/master/Setting_Stacks.prj.xml), importable into Tasker
-* [User Manual](https://github.com/blrfllabs/settingstacks/wiki/Manual)
