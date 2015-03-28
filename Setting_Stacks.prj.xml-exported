@@ -1,37 +1,3 @@
-<?xml version="1.0"?>
-<!--
-
-  Setting Stacks - An Emulation of Setting Profiles for Tasker
-
-  Version 0.5
-
-  See https://github.com/blrfllabs/settingstacks for documentation and
-  other details.
-
-
-  NOTE: This file is generated from Setting_Stacks.prj.xml-exported,
-  which is the original project exported from Tasker.  While it is not
-  usual practice to store a generated file in a VCS, this is done to
-  make it easy for end users to download a copy.  See the development
-  notes in the Setting Stacks wiki on GitHub for more information.
-
-
-  Copyright 2015 Blrfl Laboratories.  All rights reserved.
-
-  Setting Stacks is licensed under the Apache License, Version 2.0
-  (the "License") and may not be used except in compliance with the
-  License.
-
-  You may obtain a copy of the License at
-  http://www.apache.org/licenses/LICENSE-2.0.
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-  implied. See the License for the specific language governing
-  permissions and limitations under the License.
-
-  -->
 <TaskerData sr="" dvi="1" tv="4.6u3m">
 	<dmetric>1080.0,1920.0</dmetric>
 	<Profile sr="prof3" ve="2">
@@ -65,15 +31,154 @@
 		<name>Setting Stacks</name>
 		<pids>3</pids>
 		<psort>Alpha</psort>
-		
+		<scenes>HTML Popup,IconAndTextMenu</scenes>
 		<tids>83,87,22,78,79,8,84,28,23,90</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<nme>hd_device_access_storage</nme>
 		</Img>
 	</Project>
-	
-	
+	<Scene sr="sceneHTML Popup">
+		<cdate>1425699040524</cdate>
+		<edate>1425699040524</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>562</heightPort>
+		<nme>HTML Popup</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>675</widthPort>
+		<WebElement sr="elements0" ve="2">
+			<flags>5</flags>
+			<geom>0,0,675,562,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Web1</Str>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6"/>
+		</WebElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00000000</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">HTML Popup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneIconAndTextMenu">
+		<cdate>1425099270654</cdate>
+		<edate>1425099270654</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>562</heightPort>
+		<nme>IconAndTextMenu</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>774</widthPort>
+		<ListElement sr="elements0">
+			<flags>5</flags>
+			<geom>15,177,742,328,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Menu</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Int sr="arg3" val="1"/>
+			<Scene sr="arg4">
+				<Scene sr="val">
+					<cdate>1425099270654</cdate>
+					<edate>1425099270654</edate>
+					<heightLand>-1</heightLand>
+					<heightPort>168</heightPort>
+					<nme>Builtin Item Layout</nme>
+					<widthLand>-1</widthLand>
+					<widthPort>742</widthPort>
+					<ImageElement sr="elements0" ve="2">
+						<flags>5</flags>
+						<geom>573,15,153,137,-1,-1,-1,-1</geom>
+						<Str sr="arg0" ve="3">Icon</Str>
+						<Img sr="arg1" ve="2">
+							<nme>hd_aaa_ext_tiles_small</nme>
+						</Img>
+						<Int sr="arg2" val="255"/>
+						<Str sr="arg3" ve="3">#FF0099CC</Str>
+					</ImageElement>
+					<TextElement sr="elements1" ve="3">
+						<flags>5</flags>
+						<geom>112,15,445,137,-1,-1,-1,-1</geom>
+						<Str sr="arg0" ve="3">Label</Str>
+						<Str sr="arg1" ve="3"/>
+						<Int sr="arg2" val="24"/>
+						<Int sr="arg3"/>
+						<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+						<Str sr="arg5" ve="3"/>
+						<Int sr="arg6" val="3"/>
+						<Int sr="arg7"/>
+						<Int sr="arg8"/>
+					</TextElement>
+					<TextElement sr="elements2" ve="3">
+						<flags>1</flags>
+						<geom>15,15,81,137,-1,-1,-1,-1</geom>
+						<Str sr="arg0" ve="3">Index</Str>
+						<Str sr="arg1" ve="3">1.</Str>
+						<Int sr="arg2" val="24"/>
+						<Int sr="arg3"/>
+						<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+						<Str sr="arg5" ve="3"/>
+						<Int sr="arg6" val="0"/>
+						<Int sr="arg7"/>
+						<Int sr="arg8"/>
+					</TextElement>
+					<PropertiesElement sr="props">
+						<Int sr="arg0" val="1"/>
+						<Int sr="arg1" val="0"/>
+						<Str sr="arg2" ve="3">#00000000</Str>
+						<Int sr="arg3" val="0"/>
+						<Str sr="arg4" ve="3">Builtin Item Layout</Str>
+						<Str sr="arg5" ve="3"/>
+						<Img sr="arg6" ve="2"/>
+						<Str sr="arg7" ve="3"/>
+					</PropertiesElement>
+				</Scene>
+			</Scene>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="2"/>
+		</ListElement>
+		<TextElement sr="elements1" ve="3">
+			<flags>4</flags>
+			<geom>13,0,760,162,6,0,338,72</geom>
+			<Str sr="arg0" ve="3">Title</Str>
+			<Str sr="arg1" ve="3">Title</Str>
+			<Int sr="arg2" val="28"/>
+			<Int sr="arg3"/>
+			<Str sr="arg4" ve="3">#FF0099CC</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="3"/>
+			<Int sr="arg7"/>
+			<Int sr="arg8"/>
+		</TextElement>
+		<RectElement sr="elements2">
+			<flags>4</flags>
+			<geom>0,162,774,6,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Header</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#77333333</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF000000</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">IconAndTextMenu</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
 	<Task sr="task22">
 		<cdate>1425600162230</cdate>
 		<edate>1427482205532</edate>
@@ -108,7 +213,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%par1</lhs>
 					<op>12</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -144,7 +249,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%par1</lhs>
 					<op>13</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -158,7 +263,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%par2</lhs>
 					<op>13</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -258,7 +363,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%err</lhs>
 					<op>12</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -272,7 +377,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%par2</lhs>
 					<op>13</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -351,7 +456,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%SS_Default</lhs>
 					<op>12</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -442,7 +547,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%SS_Default</lhs>
 					<op>12</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -471,7 +576,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%list</lhs>
 					<op>13</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -629,7 +734,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%SS_Verbose</lhs>
 					<op>12</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -696,7 +801,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%par1</lhs>
 					<op>13</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -752,7 +857,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%SS_Verbose</lhs>
 					<op>12</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -800,7 +905,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%par2</lhs>
 					<op>13</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -958,7 +1063,7 @@
 				<Condition sr="c1" ve="3">
 					<lhs>%removed</lhs>
 					<op>13</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -993,7 +1098,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%SS_Verbose</lhs>
 					<op>12</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -1017,7 +1122,7 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%removed</lhs>
 					<op>12</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -1030,12 +1135,12 @@
 				<Condition sr="c0" ve="3">
 					<lhs>%removed</lhs>
 					<op>13</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 				<Condition sr="c1" ve="3">
 					<lhs>%SS_Verbose</lhs>
 					<op>12</op>
-					<rhs/>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>

@@ -1,0 +1,33 @@
+<!--
+
+  Setting Stacks - An Emulation of Setting Profiles for Tasker
+
+  Version 0.5
+
+  See https://github.com/blrfllabs/settingstacks for documentation and
+  other details.
+
+
+  NOTE: This file is generated from Setting_Stacks.prj.xml-exported,
+  which is the original project exported from Tasker.  While it is not
+  usual practice to store a generated file in a VCS, this is done to
+  make it easy for end users to download a copy.  See the development
+  notes in the Setting Stacks wiki on GitHub for more information.
+
+
+  Copyright 2015 Blrfl Laboratories.  All rights reserved.
+
+  Setting Stacks is licensed under the Apache License, Version 2.0
+  (the "License") and may not be used except in compliance with the
+  License.
+
+  You may obtain a copy of the License at
+  http://www.apache.org/licenses/LICENSE-2.0.
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+  implied. See the License for the specific language governing
+  permissions and limitations under the License.
+
+  -->
