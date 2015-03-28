@@ -27,7 +27,7 @@
 		<edate>1427482310928</edate>
 		<id>3</id>
 		<mid0>83</mid0>
-		<nme>SS-Timed Sweep</nme>
+		<nme>SS_Timed Sweep</nme>
 		<State sr="con0" ve="2">
 			<code>165</code>
 			<ConditionList sr="if">
